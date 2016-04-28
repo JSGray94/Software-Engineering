@@ -1,0 +1,561 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="9c74d999-85da-495b-80a9-28b8f8d7590a" name="UMLUseCaseDiagram" linkedPackageId="94d683a1-9941-473e-8425-d840754adc58" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="e9c4c294-d1ae-42cc-851d-07d156639d58">
+      <elementDefinition Id="36d61b6d-56a9-4da9-b145-fe665958491e" />
+      <body>Internet Sales System Sale Orders and Goods Recieved</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="62bf9616-9433-45fc-831a-cf5b13a5637b" name="Customer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1adab966-4bca-48b1-bcd9-8852d227fdfa" />
+        <targetEnds>
+          <association Id="84c59277-4ecf-4869-ba8f-279defe05061" isDerived="false" sourceEndRoleName="Customer" targetEndRoleName="Recieve Order Details" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="246b8a0d-0617-4acf-9ed1-6239a940bb94" LastKnownName="Recieve Order Details" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ae293239-944b-4402-851e-f8c618a21faa" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fd2a3e15-06e1-4c4d-a1d4-b9e6a9ab8dbc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9d7767ea-8d75-4517-9ad2-b9c37f5f990b" name="Recieve Order Details" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3328831e-0426-4edf-abc9-15beb2104a65" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="280a2dd7-06ea-4126-8070-7dcb906d6058" />
+          </association>
+          <association Id="fd6b26f7-f8d0-495f-b4be-5ca62de00e7a" isDerived="false" sourceEndRoleName="Customer" targetEndRoleName="Accept Terms and Conditions" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6d31d4a1-ca58-4873-b206-8c0875fd955c" LastKnownName="Accept Terms and Conditions" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1568e497-6f1a-42c8-929b-c1f37c97627c" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6eac6972-fa2d-4007-9090-126107aca571" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7a55ce5a-5159-4e5f-8ed8-731d96232520" name="Accept Terms and Conditions" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="02a2ac92-9eaf-41cf-af6a-9c05ed8d1cdb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="151e3438-dcc3-4465-9fed-99d982ab5e97" />
+          </association>
+          <association Id="115e231b-6686-473f-bd11-51c8f27f7a65" isDerived="false" sourceEndRoleName="Customer" targetEndRoleName="Add Extra Charges" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="be4813fb-5276-46e3-832a-b8f1687df10e" LastKnownName="Add Extra Charges" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f2bdeaea-57fb-4fb1-909d-b3ceeb1030fc" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5027b4be-835c-4097-803a-10c74b580eba" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="737b547a-3af2-4844-bc16-ca4f3cf64331" name="Add Extra Charges" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="13976b59-b420-413c-994c-879d8e2ef354" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b518ac51-7ea1-47df-8244-233435ba9faa" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="93dfe724-d76a-4045-a254-e7fcfb139a59" name="Supplier" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7a5944f7-31f5-4562-862b-fbb340ca592a" />
+        <targetEnds>
+          <association Id="95070ecd-4555-44e7-8f2e-904619350eb9" isDerived="false" sourceEndRoleName="Supplier" targetEndRoleName="Goods Recieved" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c50e0182-5454-4497-b740-fbd47204b058" LastKnownName="Recieve Goods" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="69d935c8-4eb1-4124-b909-622b9cd811af" name="Supplier" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7692a4a0-0a79-4491-9ece-55d616be3fcb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f5c08090-45c2-4468-bc9d-cbff5c77ff73" name="Goods Recieved" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="01be215b-ba08-480f-8756-798bd25fe2f6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d670da90-277c-412c-b86c-8b573ba0310f" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="8d0a1ce2-f35d-4189-8ba3-10eaae2ccd2f" name="Accounting" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="232f22dd-7742-40a7-9f34-910c74d8e7b5" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="cfc3604d-41a2-4621-8214-e9616123cee5" name="Stock Control" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="87e6a54a-14c0-4a43-b258-e6299dad7902" />
+        <targetEnds>
+          <association Id="468532b4-cbf4-4f4c-8060-494dfe7b3439" isDerived="false" sourceEndRoleName="Stock Control" targetEndRoleName="Ensure Stock is Available" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d324fe15-19df-48bc-9b64-09925eba2e51" LastKnownName="Ensure Stock is Available" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cc503a02-af24-4f52-b076-5ca479f939ee" name="Stock Control" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0d3d97a8-2392-4119-b237-d1468c2ee150" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f9c5f23a-0507-4b85-9a84-f577262be628" name="Ensure Stock is Available" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d448ad28-ceeb-4fe7-9d8a-03a3f39b7e64" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dbc9d572-df88-4b2f-9558-8262059cf2b7" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="9d39b619-70b9-4ebc-8771-47389fcb310e" name="Distribution" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3740a0c1-9d18-462e-9731-621d623b1908" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="246b8a0d-0617-4acf-9ed1-6239a940bb94" name="Recieve Order Details" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3a0bb0d1-4892-441d-8b67-d14aeaf3a11f" />
+        <targetEnds>
+          <association Id="7d40b5fd-473c-49f6-a3a0-aa241f17d0b2" isDerived="false" sourceEndRoleName="Recieve Order Details" targetEndRoleName="Stock Control" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="cfc3604d-41a2-4621-8214-e9616123cee5" LastKnownName="Stock Control" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6bbfc1b5-8d2d-4692-8e0e-c8e3c8a849fa" name="Recieve Order Details" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="af390aa7-b6f7-47b0-b098-eb6de2a0a01e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b4901b49-3555-4107-ba39-1dd565ecb262" name="Stock Control" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cde4be80-8535-48d5-aee5-57f6d669a9f5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6cdde284-0bbd-4997-902d-cb440fecbb5c" />
+          </association>
+          <association Id="dfb5cc7e-a347-45c9-bf01-fc917d939eb3" isDerived="false" sourceEndRoleName="Recieve Order Details" targetEndRoleName="Distribution" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="9d39b619-70b9-4ebc-8771-47389fcb310e" LastKnownName="Distribution" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="904e1d04-b282-4f6e-a4a6-55067dee9806" name="Recieve Order Details" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f1a8b33d-eb79-433a-8901-5f9b5303dfce" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="660dbfa4-a88d-4877-aa65-5975f70b4698" name="Distribution" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7ac147e3-3f8d-4baa-a5a6-340e8d27d9c2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="916c0793-ce0e-4465-81e2-46ebcba4d21a" />
+          </association>
+        </targetEnds>
+        <additions>
+          <include Id="3030ffc7-abf7-4bee-8c7d-b201424e8660">
+            <useCaseMoniker Id="6d31d4a1-ca58-4873-b206-8c0875fd955c" LastKnownName="Accept Terms and Conditions" />
+            <elementDefinition Id="d82a6366-fe7f-462d-9039-bd651177b12a" />
+          </include>
+          <include Id="266a416a-0266-4f29-bc9b-353746b9ee09">
+            <useCaseMoniker Id="a0abd942-74aa-4173-850d-7a139c9fc0f6" LastKnownName="Create Invoice" />
+            <elementDefinition Id="6a0ad0b2-5867-4420-87c9-99d17f6d82c6" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6d31d4a1-ca58-4873-b206-8c0875fd955c" name="Accept Terms and Conditions" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="865600c9-7e37-441b-8da7-adb72db21497" />
+        <additions>
+          <include Id="d8b9570c-9771-4b83-b40a-1d573c84f868">
+            <useCaseMoniker Id="d324fe15-19df-48bc-9b64-09925eba2e51" LastKnownName="Ensure Stock is Available" />
+            <elementDefinition Id="36a26e9b-b5c6-4559-95ff-369348c6b14b" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a0abd942-74aa-4173-850d-7a139c9fc0f6" name="Create Invoice" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e11f744c-1766-4786-ae55-ef30077cc98e" />
+        <targetEnds>
+          <association Id="57fab997-d406-44e3-a625-3a53233685bc" isDerived="false" sourceEndRoleName="Create Invoice" targetEndRoleName="Accounting" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="8d0a1ce2-f35d-4189-8ba3-10eaae2ccd2f" LastKnownName="Accounting" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d3b9f0b6-6dca-4470-a1c8-ce178779bc3d" name="Create Invoice" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8158bd8d-f318-419f-a7bb-b9a628ddfed5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2b92972b-c705-4307-b71c-189d8be7841d" name="Accounting" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="86f54827-ddab-493b-a631-16de760f190f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="58799bab-3031-4da1-91f4-806ac499fc98" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="84157bbb-4305-4a1f-b4b9-23b04ef21e33" name="Send Acknowledgement Email" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b7121d7e-fa6a-45a8-ab3b-ed5b3165b91f" />
+        <targetEnds>
+          <association Id="c4d3ede4-6e9d-4e04-8542-210cb1146001" isDerived="false" sourceEndRoleName="Send Acknowledgement Email" targetEndRoleName="Customer" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="62bf9616-9433-45fc-831a-cf5b13a5637b" LastKnownName="Customer" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cfa3bc6b-d096-42c6-a149-3e15fa2771d5" name="Send Acknowledgement Email" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="68abf910-6140-4131-bc0c-d4d9fb70c3ad" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="972ee088-6ced-4712-9ce9-3bed88b040f6" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="644d061b-7e25-4ace-b144-13fbe50835c4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ea5f2516-2824-4101-a3a1-1e06cf3801f8" />
+          </association>
+        </targetEnds>
+        <additions>
+          <include Id="0b46321e-6bd2-4b69-a95e-786de7197dac">
+            <useCaseMoniker Id="59982795-a117-4340-b0b2-3bdb93ea9022" LastKnownName="Send T&amp;C's PDF Email" />
+            <elementDefinition Id="26a8ae47-6622-463f-8ac6-5da513836dca" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d324fe15-19df-48bc-9b64-09925eba2e51" name="Ensure Stock is Available" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="478caeca-0774-4ada-9059-df3c4a3a9ea0" />
+        <additions>
+          <include Id="85da76c6-31a6-466d-8ff9-d70bfb78a42c">
+            <useCaseMoniker Id="84157bbb-4305-4a1f-b4b9-23b04ef21e33" LastKnownName="Send Acknowledgement Email" />
+            <elementDefinition Id="2d5578dd-7c3f-4edb-a408-d63374ef2a95" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f596c815-f27b-43bc-90e0-b36490a7c31d" name="Inform about Limited Stock" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="678128d3-fb14-40dd-85ef-3fbd71557241" />
+        <targetEnds>
+          <association Id="c0b2e3b8-41bf-440f-bcd9-974531a02033" isDerived="false" sourceEndRoleName="Inform about Limited Stock" targetEndRoleName="Customer" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="62bf9616-9433-45fc-831a-cf5b13a5637b" LastKnownName="Customer" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="896112b8-13aa-4f78-b86e-70df24f34ba2" name="Inform about Limited Stock" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a43e64db-b7c1-40e7-bf34-5c9ccd0f62a0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="56ce9ad4-40cf-49ab-860a-9a9821244222" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0ddc0ed6-6ddc-4596-babd-694ed7098ef0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f0a19b05-2943-469d-8296-58fb44f7ff9e" />
+          </association>
+        </targetEnds>
+        <extendedCases>
+          <extend Id="6e503afc-e37e-4f26-98d6-ee7469e7db1a">
+            <useCaseMoniker Id="d324fe15-19df-48bc-9b64-09925eba2e51" LastKnownName="Ensure Stock is Available" />
+            <elementDefinition Id="63937c3d-cd04-41a0-800c-ec8eaf3f7b5a" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="59982795-a117-4340-b0b2-3bdb93ea9022" name="Send T&amp;C's PDF Email" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b33e0afb-8ca2-487f-adf0-b61586eb2c4a" />
+        <targetEnds>
+          <association Id="b974b577-efcd-4072-a6f4-36f4fc62d265" isDerived="false" sourceEndRoleName="Send T&amp;C's PDF Email" targetEndRoleName="Customer" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="62bf9616-9433-45fc-831a-cf5b13a5637b" LastKnownName="Customer" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="834bd0a6-2b2b-4517-86da-43e4e33169ba" name="Send T&amp;C's PDF Email" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="740a3cc4-01fd-48ea-a9ff-30795bf73fe5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ac10af55-9916-427e-83b2-4c15bfee9fb8" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="813df653-928e-400c-9b5c-e22f1e30da68" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="226812c0-567b-417d-9815-dafe24272bdc" />
+          </association>
+        </targetEnds>
+        <additions>
+          <include Id="dd2f8dba-ac29-446c-9a08-630539fc7c74">
+            <useCaseMoniker Id="678eefba-c128-4436-91ed-7513a03f277e" LastKnownName="Create Invoice" />
+            <elementDefinition Id="49d6fc8a-568d-4fa2-b665-4b195aae2002" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="678eefba-c128-4436-91ed-7513a03f277e" name="Create Invoice" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5cfa7293-d405-4c4f-b5ac-238b7f1368c1" />
+        <extendedCases>
+          <extend Id="3372cf13-60f2-4369-acf6-e197c7762d52">
+            <useCaseMoniker Id="be4813fb-5276-46e3-832a-b8f1687df10e" LastKnownName="Add Extra Charges" />
+            <elementDefinition Id="3ff18c05-418a-4ea8-885f-e0805cf33f27" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include Id="1528fbd7-d2ed-41ed-a7e9-92154985f1fd">
+            <useCaseMoniker Id="fae5d727-0532-4502-87d6-cf3bcb982963" LastKnownName="Display Invoice" />
+            <elementDefinition Id="9a8b751c-e4b1-4c76-ae27-b97e5bef4662" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="be4813fb-5276-46e3-832a-b8f1687df10e" name="Add Extra Charges" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a95abc6e-18c0-4dcd-ac1d-9d4e75d2962c" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fae5d727-0532-4502-87d6-cf3bcb982963" name="Display Invoice" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fd6a44e0-da80-412e-bc86-1094f0c44624" />
+        <targetEnds>
+          <association Id="05336ccd-3a2d-4b96-a269-e419acd63b76" isDerived="false" sourceEndRoleName="Display Invoice" targetEndRoleName="Customer" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="62bf9616-9433-45fc-831a-cf5b13a5637b" LastKnownName="Customer" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0ed33490-a277-4c78-a8af-2cf03057de1a" name="Display Invoice" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="864c1dae-700f-44aa-ab5a-d68f6077cbd5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="158698b7-7013-425e-a864-031533a1d6d0" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="60522e66-d30c-4d0d-8abe-8319dd68758d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="65f22d46-0dcd-4b9f-a091-87d814c87157" />
+          </association>
+        </targetEnds>
+        <additions>
+          <include Id="7550d2b5-7f39-442a-ab07-d72ac01de5d2">
+            <useCaseMoniker Id="0b71d42e-f03c-4e36-b8d0-f118259c2624" LastKnownName="Accept Payment" />
+            <elementDefinition Id="a1b2e778-f172-4857-ba0a-06c64ac4b504" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0b71d42e-f03c-4e36-b8d0-f118259c2624" name="Accept Payment" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4853fe77-82e4-4da1-abd4-78be22d2c54e" />
+        <targetEnds>
+          <association Id="9a2f1391-c277-4d88-9d35-36d8b756494f" isDerived="false" sourceEndRoleName="Accept Payment" targetEndRoleName="Customer" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="62bf9616-9433-45fc-831a-cf5b13a5637b" LastKnownName="Customer" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="beb02ef5-b94a-46fe-88ca-152941167ea5" name="Accept Payment" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="11fdd39c-0443-445a-ac7f-aed0c699bac7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="300d9a66-aad0-46e3-93d0-b48adc891f5d" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="76a8d1cc-688e-4415-b44c-b272b9a63cfb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e3f31f21-050d-4d60-ac39-afedf8cf71d5" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c50e0182-5454-4497-b740-fbd47204b058" name="Recieve Goods" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="70311b7b-e184-4df3-a13b-334749312fd0" />
+        <targetEnds>
+          <association Id="3d60b5ff-7d41-4eea-938b-0eb0d6901194" isDerived="false" sourceEndRoleName="Goods Recieved" targetEndRoleName="Recieving Dpt." isLeaf="false" isAbstract="false">
+            <actorMoniker Id="6e2ef0ff-1e40-482c-81ae-adac7f812e8e" LastKnownName="Recieving Dpt." />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7ab331d8-6300-4edb-b535-131aafda3f4d" name="Goods Recieved" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="58ba439c-1005-47c7-9616-3809667ad46e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="325afb49-76c6-4e0c-b13d-38622a731b16" name="Recieving Dpt." isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="59176bac-f177-4265-808a-730ecb2861b0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c75a4be1-4c69-4b9d-8312-a71960a53095" />
+          </association>
+        </targetEnds>
+        <additions>
+          <include Id="9b7c3648-9dc8-4a2b-abf6-0b979f49cca0">
+            <useCaseMoniker Id="21b7c981-dc45-4996-abd7-932877edd90b" LastKnownName="Verify Against Order" />
+            <elementDefinition Id="8b56583d-70f7-45c1-9752-31ced3ec6110" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f4507fcc-0455-4c40-aad4-7b541776531d" name="Cancel Order" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f19141d1-5b41-4e95-b1d8-49cd115d5071" />
+        <extendedCases>
+          <extend Id="9107fd55-7963-4300-bf9a-696e1e502237">
+            <useCaseMoniker Id="0b71d42e-f03c-4e36-b8d0-f118259c2624" LastKnownName="Accept Payment" />
+            <elementDefinition Id="c48e7ac4-a33e-4aff-b1a3-6e30362d0dae" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="21b7c981-dc45-4996-abd7-932877edd90b" name="Verify Against Order" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6cef2968-3746-4215-9aeb-b232736f7829" />
+        <additions>
+          <include Id="2c347a7c-cf39-4547-9562-67ec62f0c4fe">
+            <useCaseMoniker Id="deb4c0d7-09b7-4d1a-a757-7dd599feca44" LastKnownName="Prepare Recieving Report" />
+            <elementDefinition Id="ded32e7b-63b9-4a5c-be9d-5b3c4baea15b" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="6e2ef0ff-1e40-482c-81ae-adac7f812e8e" name="Recieving Dpt." isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6a850a7e-c9a7-441a-82a4-cacd54f1b7af" />
+        <targetEnds>
+          <association Id="08956bcf-6e5e-455b-9a2e-61a62741a27a" isDerived="false" sourceEndRoleName="Recieving Dpt." targetEndRoleName="Verify Against Order" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="21b7c981-dc45-4996-abd7-932877edd90b" LastKnownName="Verify Against Order" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f0d39324-b178-49f0-b63d-5e7107ca0fea" name="Recieving Dpt." isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1a7378fe-c902-44ae-aabf-1537cf288921" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ce876225-1b73-432f-af92-c9a332a4376f" name="Verify Against Order" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="460d7ccc-8c24-4035-ab08-d81affbe3aa9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="eb9d8a17-9326-45be-8fb4-546deee9d922" />
+          </association>
+          <association Id="6943b647-ccda-4528-a927-d7533520e13b" isDerived="false" sourceEndRoleName="Recieving Dpt." targetEndRoleName="Prepare Recieving Report" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="deb4c0d7-09b7-4d1a-a757-7dd599feca44" LastKnownName="Prepare Recieving Report" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="52ffdd76-9321-4276-929a-758c192beaba" name="Recieving Dpt." isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="dddf749e-0946-43db-8e04-0a796cce486c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="74f952e1-48a2-4f68-a150-fb569095e98b" name="Prepare Recieving Report" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fe6b7c37-9c6a-4204-840b-b508602d3b7a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f44a58c6-eabb-4bbc-bd18-0a2e730bfa72" />
+          </association>
+          <association Id="975a2871-f1d3-49f5-bf75-e0c075c1b18e" isDerived="false" sourceEndRoleName="Recieving Dpt." targetEndRoleName="Note Discrepencies" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e1aed7c5-0c83-4bfe-b205-11c29724cba0" LastKnownName="Note Discrepencies" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a802b20c-fc30-47d5-98d5-5d4552ae402e" name="Recieving Dpt." isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="55783c9c-d8b7-4238-aa5f-276d449f8f36" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="10e52575-165e-4f56-85f5-26575ca0ad37" name="Note Discrepencies" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fabaf353-2b35-40ad-9d04-efe9b3b61638" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ef18795f-1f50-4fd0-b559-6849ce10260c" />
+          </association>
+          <association Id="d146f16a-788a-43df-8e2f-6e436509f82a" isDerived="false" sourceEndRoleName="Recieving Dpt." targetEndRoleName="Deliver Goods" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="3a458eab-368b-4148-9449-e598199569c6" LastKnownName="Deliver Goods" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8d200895-8e49-4c9e-a403-ec88fdc49d49" name="Recieving Dpt." isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1df136a2-8ef7-40bd-acd4-006d4a26cf0c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f6ecb915-73f4-4713-92af-3f0a4c98edfc" name="Deliver Goods" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4b1122ee-0f27-4734-bb1c-09948d1e781b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fa3f5931-572b-403f-baf7-babaa5840fd5" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="deb4c0d7-09b7-4d1a-a757-7dd599feca44" name="Prepare Recieving Report" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e521a76e-4e1d-4921-86e1-d07811aef228" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e1aed7c5-0c83-4bfe-b205-11c29724cba0" name="Note Discrepencies" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="db723263-bcad-4c2e-9b50-791b515d30a9" />
+        <extendedCases>
+          <extend Id="5da6d3c8-969d-4693-8b05-a715d1b4dd7f">
+            <useCaseMoniker Id="deb4c0d7-09b7-4d1a-a757-7dd599feca44" LastKnownName="Prepare Recieving Report" />
+            <elementDefinition Id="dda558ce-07ef-4dac-8de8-ad63f9b153b2" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include Id="9ecd1476-cbff-4367-b87e-576406c6caca">
+            <useCaseMoniker Id="3a458eab-368b-4148-9449-e598199569c6" LastKnownName="Deliver Goods" />
+            <elementDefinition Id="05018d22-6eb7-43e5-9c37-267d4f43aaf8" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3a458eab-368b-4148-9449-e598199569c6" name="Deliver Goods" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="38fc4f1d-ddb6-4493-abc3-761e392fbd62" />
+        <targetEnds>
+          <association Id="11d927ce-4d19-4706-8453-1f8ab30e0bd1" isDerived="false" sourceEndRoleName="Deliver Goods" targetEndRoleName="Stock Control" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="cfc3604d-41a2-4621-8214-e9616123cee5" LastKnownName="Stock Control" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="61838106-0695-48bf-8e7f-b3e110cc3244" name="Deliver Goods" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9b3df729-14ec-4eb1-8e85-23a76d53b057" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="292ab009-5376-42ea-8d46-3a9dc738a5c9" name="Stock Control" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1b17e46b-aed0-41c5-b969-3c752e8b8d89" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0c8b3576-ee67-4b78-8682-5c9a613f1486" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="94d683a1-9941-473e-8425-d840754adc58" name="CourseworkDiagrams">
+    <elementDefinition Id="a251ba46-1881-412d-8f29-92b703f465f8" />
+    <profileInstances>
+      <packageHasProfileInstances Id="a39e6cac-5b0a-4bf3-aacb-bbd3d50aab06">
+        <profileInstance Id="66a459cc-69d5-4def-9815-50779efa1536" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="4f8940dd-0fca-4956-bfef-1b6e94c20755">
+        <profileInstance Id="3cdda162-af58-4651-ac41-760634b07eef" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

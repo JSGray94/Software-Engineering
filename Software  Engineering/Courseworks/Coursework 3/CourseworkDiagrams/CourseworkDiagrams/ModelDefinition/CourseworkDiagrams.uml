@@ -1,0 +1,3214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+  dslVersion="1.0.0.0"
+  Id="a251ba46-1881-412d-8f29-92b703f465f8"
+  name="CourseworkDiagrams" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="36d61b6d-56a9-4da9-b145-fe665958491e">
+      <body>Internet Sales System Sale Orders and Goods Recieved</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <useCase
+        Id="c67932b7-07ce-4cd5-be49-d1156f19d098"
+        name="Accept Order Details"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="874c9a32-077a-406b-9b7e-d9691c7c0490"
+        name="Validate Order"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="eb6b7af8-1f6a-4b9a-a20b-cab4a64a3fce"
+        name="Send Acknowledgement e-mail"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="37820f13-f8e1-4c0c-8144-1335cf58ab57"
+        name="Accept Order"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="41ba6d13-b065-4455-ac41-7f2c36f88992"
+        name="Validate Order"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8d5446ed-bfbb-483a-9e45-12358407ac12"
+        name="Send Acknowledgement E-Mail"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f911835b-d7e2-438b-bd22-51cc1023e10b"
+        name="Send Order Acceptance E-mail"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="ed147581-7521-4a6f-bae2-7ac594da672f"
+        name="Activity"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="8e5226ed-9530-47b4-bb3a-eca04add2452"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4d44119d-eae1-4a18-9d9c-926efcf59a84"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d6890bb0-140e-46cc-b3d1-c081a663aa7e"
+                  LastKnownName="Accept Order Details"
+                  LastKnownLocation="CourseworkDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="d6890bb0-140e-46cc-b3d1-c081a663aa7e"
+            name="Accept Order Details"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="14169df7-4eb6-4b5e-b32d-9182d0128b48"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="0880a709-119e-4eef-b6bc-25316772c510"
+                  LastKnownName="Send Acknowledgement Email"
+                  LastKnownLocation="CourseworkDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="0880a709-119e-4eef-b6bc-25316772c510"
+            name="Send Acknowledgement Email"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3edb0e53-47c1-402c-a4e5-516fc9641b16"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="0e122d0d-0d47-456c-86d9-83bad159cce3"
+                  LastKnownName="Validate Order"
+                  LastKnownLocation="CourseworkDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="0e122d0d-0d47-456c-86d9-83bad159cce3"
+            name="Validate Order"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="edddd5af-1227-48de-b694-698de7fd6aba"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="0ed27742-4359-48e4-adcd-25b62e7efb51"
+                  LastKnownName="Ensure Necessary Stock Available"
+                  LastKnownLocation="CourseworkDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="0ed27742-4359-48e4-adcd-25b62e7efb51"
+            name="Ensure Necessary Stock Available"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1389da09-a890-44c7-993f-af79e101aef2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="20c764c8-b2cb-4af5-8d0a-99d0c6b75ca8"
+                  LastKnownName="Send Terms and Conditions PDF"
+                  LastKnownLocation="CourseworkDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="92e88b69-c336-4463-9ee0-40177d8b6381"
+            name="Send Acceptance of Order Email"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1c92a6f7-4506-4239-84dc-d08cb4c93ff6"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="4f95ffc2-5e75-493a-a5d5-52799fea72fe"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="CourseworkDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="4f95ffc2-5e75-493a-a5d5-52799fea72fe"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d181e9c2-269e-4e11-b4ca-1f30352ecb7f"
+                guard="Un-Ticked Box"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="1319fa01-7615-4b7a-82a8-afbe7a4eb73c"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="CourseworkDiagrams.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="d9eb1ac3-0e7e-4a03-b7bb-dcd1977c93e7"
+                guard="Ticked Box"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b0518f43-3d08-4f22-93cd-a40a75ae31c4"
+                  LastKnownName="Charge Extras"
+                  LastKnownLocation="CourseworkDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="b0518f43-3d08-4f22-93cd-a40a75ae31c4"
+            name="Charge Extras"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="701cafb4-c3f0-4123-ada2-443fe3d33d11"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="0ce6adf6-aff7-41ad-9354-c91b5b632739"
+                  LastKnownName="Calculate New Price"
+                  LastKnownLocation="CourseworkDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode
+            Id="1319fa01-7615-4b7a-82a8-afbe7a4eb73c"
+            name="Merge1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="70449018-c811-4767-a841-6cd9ad081553"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="2a60af61-fa7b-4ec8-87ed-49f65b28a536"
+                  LastKnownName="Create and Display Invoice"
+                  LastKnownLocation="CourseworkDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <opaqueAction
+            Id="0ce6adf6-aff7-41ad-9354-c91b5b632739"
+            name="Calculate New Price"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="bbebc920-8d9b-4d6c-9f73-7507ea774c1a"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="1319fa01-7615-4b7a-82a8-afbe7a4eb73c"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="CourseworkDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="20c764c8-b2cb-4af5-8d0a-99d0c6b75ca8"
+            name="Send Terms and Conditions PDF"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="df1073f6-c881-4340-be28-c1db0dd383ce"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="92e88b69-c336-4463-9ee0-40177d8b6381"
+                  LastKnownName="Send Acceptance of Order Email"
+                  LastKnownLocation="CourseworkDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="2a60af61-fa7b-4ec8-87ed-49f65b28a536"
+            name="Create and Display Invoice"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1d7777dc-5212-4f52-80bd-535998828fb3"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="2edd5719-a6c4-4fe6-b9de-908d08bbf928"
+                  LastKnownName="Accept Payment"
+                  LastKnownLocation="CourseworkDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="2edd5719-a6c4-4fe6-b9de-908d08bbf928"
+            name="Accept Payment"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f130cad8-fb87-42b5-892e-f49d8753f6e4"
+                isLeaf="false">
+                <forkNodeMoniker
+                  Id="5ec56110-767d-4800-a0e5-a9592341394f"
+                  LastKnownName="Fork1"
+                  LastKnownLocation="CourseworkDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode
+            Id="5ec56110-767d-4800-a0e5-a9592341394f"
+            name="Fork1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="15fe53fc-d199-43fc-834f-1e309a6c656e"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="7c4cc067-58da-4006-9d32-09115ae27683"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="CourseworkDiagrams.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="8474bc1d-fc79-4f2c-8c68-bad4361eb6ab"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="823ea398-17e3-4347-8a25-9af6551ead69"
+                  LastKnownName="Send Order Details/invoice to All Departments"
+                  LastKnownLocation="CourseworkDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction
+            Id="823ea398-17e3-4347-8a25-9af6551ead69"
+            name="Send Order Details/invoice to All Departments"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="db810b39-e643-458d-9dbc-98f977226955"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="2e597801-ef29-46c2-bdbc-8f2fa7edd807"
+                  LastKnownName="Check if Order has been sent within 30 days"
+                  LastKnownLocation="CourseworkDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="7c4cc067-58da-4006-9d32-09115ae27683"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="686fc2bf-6632-40b6-bfc2-d786a91d7a27"
+                guard="Cancel Order Selected"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9d0be596-8aa4-47d1-b4c8-ec5baae8dd57"
+                  LastKnownName="Check Email reciept date"
+                  LastKnownLocation="CourseworkDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="9d0be596-8aa4-47d1-b4c8-ec5baae8dd57"
+            name="Check Email reciept date"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="8c485c2f-6bf9-4a29-8f39-55f804c2b898"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="dbce119d-39f7-4c4a-bfe2-0af4bc5369ed"
+                  LastKnownName="Decision3"
+                  LastKnownLocation="CourseworkDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="dbce119d-39f7-4c4a-bfe2-0af4bc5369ed"
+            name="Decision3"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="bee7f0ab-25c3-4520-b827-8f7384ce6197"
+                guard="Sent &gt; 14 Days Ago"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9a905425-8947-4483-a6d7-1c1428f63173"
+                  LastKnownName="Can't Cancel Order"
+                  LastKnownLocation="CourseworkDiagrams.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="2582aa24-71c0-4a8a-bf5c-add7ff895e90"
+                guard="Sent 14 Days Ago or Less"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="4a9c722c-996e-4f79-a89c-4d9738b954e1"
+                  LastKnownName="Cancel Order"
+                  LastKnownLocation="CourseworkDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="9a905425-8947-4483-a6d7-1c1428f63173"
+            name="Can't Cancel Order"
+            isLeaf="false" />
+          <opaqueAction
+            Id="4a9c722c-996e-4f79-a89c-4d9738b954e1"
+            name="Cancel Order"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="14e7afc4-cf6b-4ca6-8bf2-4e496203258c"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="69ca4007-e86a-4dc1-b560-84c426144403"
+                  LastKnownName="Merge2"
+                  LastKnownLocation="CourseworkDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="8ab607c8-e4e7-447c-be0d-851c4afacc21"
+            name="Send Payment Return Notification"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9cf7290e-cff2-427a-8d5d-dcac81251085"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="a9648b53-4ca6-46e2-83f5-10c8284d501d"
+                  LastKnownName="Return Payment"
+                  LastKnownLocation="CourseworkDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="a9648b53-4ca6-46e2-83f5-10c8284d501d"
+            name="Return Payment"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f832139f-93dd-4d61-aa13-c7acf6df223d"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="68f5ee66-9c5a-4795-9f04-daf62c0ac719"
+                  LastKnownName="Check Goods Status"
+                  LastKnownLocation="CourseworkDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode
+            Id="69ca4007-e86a-4dc1-b560-84c426144403"
+            name="Merge2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="90b6b6ac-da01-4453-91f4-5d651046f6cb"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="8ab607c8-e4e7-447c-be0d-851c4afacc21"
+                  LastKnownName="Send Payment Return Notification"
+                  LastKnownLocation="CourseworkDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <opaqueAction
+            Id="68f5ee66-9c5a-4795-9f04-daf62c0ac719"
+            name="Check Goods Status"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="44a843dc-38c7-4031-b85f-7596703abd8e"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="412d8bcc-1734-459d-bf55-d7bd6153992b"
+                  LastKnownName="Decision4"
+                  LastKnownLocation="CourseworkDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="412d8bcc-1734-459d-bf55-d7bd6153992b"
+            name="Decision4"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9b636c56-28f6-438a-bc40-9a3bc1ddc043"
+                guard="Goods Returned"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="5672ad2b-bd74-4801-b3ad-cfbf2aeef665"
+                  LastKnownName="Notify returning of goods"
+                  LastKnownLocation="CourseworkDiagrams.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="a0002bed-0c00-45b8-9063-7271ce02717a"
+                guard="Goods not returned"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="067a8c82-0883-4f5e-ad65-397b0ce0d766"
+                  LastKnownName="Charge for goods"
+                  LastKnownLocation="CourseworkDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="5672ad2b-bd74-4801-b3ad-cfbf2aeef665"
+            name="Notify returning of goods"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d2c1aedf-738e-433d-8d2c-2b5cf34c319b"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="d6667d2c-3686-47db-bc3c-7966e6602fb2"
+                  LastKnownName="Merge4"
+                  LastKnownLocation="CourseworkDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="067a8c82-0883-4f5e-ad65-397b0ce0d766"
+            name="Charge for goods"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3c2027ed-7cdd-4ed6-b220-d2f81237b0d2"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="d6667d2c-3686-47db-bc3c-7966e6602fb2"
+                  LastKnownName="Merge4"
+                  LastKnownLocation="CourseworkDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="2e597801-ef29-46c2-bdbc-8f2fa7edd807"
+            name="Check if Order has been sent within 30 days"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="66bd348e-3068-4354-be3c-60406f26de68"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="714c4a11-ad26-406c-a43f-276cb9cb0ff6"
+                  LastKnownName="Notify Customer"
+                  LastKnownLocation="CourseworkDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="714c4a11-ad26-406c-a43f-276cb9cb0ff6"
+            name="Notify Customer"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="8c97d5b3-beee-42aa-946a-fee17afc41f6"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="2560f358-e7b2-4eb3-b44d-5995b53ce755"
+                  LastKnownName="Decision5"
+                  LastKnownLocation="CourseworkDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="2560f358-e7b2-4eb3-b44d-5995b53ce755"
+            name="Decision5"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="44c108db-2a56-4972-b488-ae9d63b23bc7"
+                guard="Customer Accepts Goods"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="4486309e-d561-4f5c-aa2d-7e4dc7903247"
+                  LastKnownName="Continue Order"
+                  LastKnownLocation="CourseworkDiagrams.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="57b66f73-cb7e-4b89-b9e7-75fd4394eb4d"
+                guard="Customer Declines Goods"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f20b5ec5-bbbb-49fa-a2bc-1af487f836e9"
+                  LastKnownName="Cancel Order"
+                  LastKnownLocation="CourseworkDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="f20b5ec5-bbbb-49fa-a2bc-1af487f836e9"
+            name="Cancel Order"
+            isLeaf="false" />
+          <mergeNode
+            Id="e65f3d69-1a68-4977-8139-ebace402a6be"
+            name="Merge3"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b0c395ec-313a-4bf5-b560-c44b9cd3ae83"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="efe0e81a-11dc-4dd4-b5d2-7e4fe1bdf8e9"
+                  LastKnownName="Join1"
+                  LastKnownLocation="CourseworkDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <opaqueAction
+            Id="4486309e-d561-4f5c-aa2d-7e4dc7903247"
+            name="Continue Order"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3b7fcd83-38ef-4609-994f-15c8f1550e06"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="e65f3d69-1a68-4977-8139-ebace402a6be"
+                  LastKnownName="Merge3"
+                  LastKnownLocation="CourseworkDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode
+            Id="d6667d2c-3686-47db-bc3c-7966e6602fb2"
+            name="Merge4"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9902e043-6327-4374-8bd0-6de1d7199036"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="efe0e81a-11dc-4dd4-b5d2-7e4fe1bdf8e9"
+                  LastKnownName="Join1"
+                  LastKnownLocation="CourseworkDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <joinNode
+            Id="efe0e81a-11dc-4dd4-b5d2-7e4fe1bdf8e9"
+            name="Join1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1729a4bf-da05-4bd4-a0f5-e66ff96a298a"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="00c70dfd-3baf-4b98-90fb-88996f767afb"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="CourseworkDiagrams.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <activityFinalNode
+            Id="00c70dfd-3baf-4b98-90fb-88996f767afb"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f4a07bd9-7ebf-4fdb-8a6f-e17b000d24fc"
+        name="Customer"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="ba56f0e4-a65d-47d6-9558-31421c9cc56c"
+            isDerived="false"
+            sourceEndRoleName="Customer"
+            targetEndRoleName="Order"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="d6ba7f99-692f-4e84-b10d-5fa58d9f0379"
+              LastKnownName="Order"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="23daf0a1-7569-45d5-a098-beb1584062d1"
+                  name="Customer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="d4565867-8fac-43a9-b655-f72659b31f4c"
+                      name="Lower"
+                      value="1:*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ac2f733e-9949-455d-be4b-9ddde9591e43"
+                      name="Upper"
+                      value="1:*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7971df58-e453-4ca3-a885-1360334566d3"
+                  name="Order"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="766ab06d-6e48-4feb-87bc-bb64ab11271a"
+                      name="Lower"
+                      value="1:1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="13043548-639c-4104-bfe8-1adb7cf51858"
+                      name="Upper"
+                      value="1:1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="f4fdec10-116b-4e25-87eb-578f76e40240"
+            name="customerID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="CourseworkDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="c52197b1-958f-47a7-bdc7-4f7c8136b82e"
+            name="customerEmail"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="CourseworkDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="daf8786d-919f-44f0-b4d5-e935992d15b1"
+            name="customerName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="CourseworkDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="7c6fff3a-5a8c-4119-a4ec-6bcff7ee3abf"
+            name="telephoneNum"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="CourseworkDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="50b0aeac-4f05-4143-9968-73000c54ab41"
+            name="extras"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a2ba0701-189b-41b5-a935-a51b885d90cc"
+                LastKnownName="Bool"
+                LastKnownLocation="CourseworkDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="dc38544f-9889-4260-b1fe-20dcd722f59b"
+            name="createOrder"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b7ccb1fc-75b2-4886-b550-6a50b2dca070"
+            name="acceptTerms"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="d13a304a-4e41-48a2-b3f5-4e574a3d0eb6"
+            name="sendPayment"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="2daed880-2cac-4926-a47b-244d22b8969e"
+            name="addExtras"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="92a22be4-cd49-4840-878e-5db44a710dfb"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="CourseworkDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="0472a71d-316d-478f-8656-34cf00564b35"
+            name="cancelOrder : Boolean"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="1adab966-4bca-48b1-bcd9-8852d227fdfa"
+        name="Customer"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="280a2dd7-06ea-4126-8070-7dcb906d6058"
+            isDerived="false"
+            sourceEndRoleName="Customer"
+            targetEndRoleName="Recieve Order Details"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="3a0bb0d1-4892-441d-8b67-d14aeaf3a11f"
+              LastKnownName="Recieve Order Details"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fd2a3e15-06e1-4c4d-a1d4-b9e6a9ab8dbc"
+                  name="Customer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3328831e-0426-4edf-abc9-15beb2104a65"
+                  name="Recieve Order Details"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="151e3438-dcc3-4465-9fed-99d982ab5e97"
+            isDerived="false"
+            sourceEndRoleName="Customer"
+            targetEndRoleName="Accept Terms and Conditions"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="865600c9-7e37-441b-8da7-adb72db21497"
+              LastKnownName="Accept Terms and Conditions"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6eac6972-fa2d-4007-9090-126107aca571"
+                  name="Customer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="02a2ac92-9eaf-41cf-af6a-9c05ed8d1cdb"
+                  name="Accept Terms and Conditions"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b518ac51-7ea1-47df-8244-233435ba9faa"
+            isDerived="false"
+            sourceEndRoleName="Customer"
+            targetEndRoleName="Add Extra Charges"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a95abc6e-18c0-4dcd-ac1d-9d4e75d2962c"
+              LastKnownName="Add Extra Charges"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5027b4be-835c-4097-803a-10c74b580eba"
+                  name="Customer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="13976b59-b420-413c-994c-879d8e2ef354"
+                  name="Add Extra Charges"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="7a5944f7-31f5-4562-862b-fbb340ca592a"
+        name="Supplier"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="d670da90-277c-412c-b86c-8b573ba0310f"
+            isDerived="false"
+            sourceEndRoleName="Supplier"
+            targetEndRoleName="Goods Recieved"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="70311b7b-e184-4df3-a13b-334749312fd0"
+              LastKnownName="Recieve Goods"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7692a4a0-0a79-4491-9ece-55d616be3fcb"
+                  name="Supplier"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="01be215b-ba08-480f-8756-798bd25fe2f6"
+                  name="Goods Recieved"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="232f22dd-7742-40a7-9f34-910c74d8e7b5"
+        name="Accounting"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="87e6a54a-14c0-4a43-b258-e6299dad7902"
+        name="Stock Control"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="dbc9d572-df88-4b2f-9558-8262059cf2b7"
+            isDerived="false"
+            sourceEndRoleName="Stock Control"
+            targetEndRoleName="Ensure Stock is Available"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="478caeca-0774-4ada-9059-df3c4a3a9ea0"
+              LastKnownName="Ensure Stock is Available"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0d3d97a8-2392-4119-b237-d1468c2ee150"
+                  name="Stock Control"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d448ad28-ceeb-4fe7-9d8a-03a3f39b7e64"
+                  name="Ensure Stock is Available"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="3740a0c1-9d18-462e-9731-621d623b1908"
+        name="Distribution"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3a0bb0d1-4892-441d-8b67-d14aeaf3a11f"
+        name="Recieve Order Details"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="6cdde284-0bbd-4997-902d-cb440fecbb5c"
+            isDerived="false"
+            sourceEndRoleName="Recieve Order Details"
+            targetEndRoleName="Stock Control"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="87e6a54a-14c0-4a43-b258-e6299dad7902"
+              LastKnownName="Stock Control"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="af390aa7-b6f7-47b0-b098-eb6de2a0a01e"
+                  name="Recieve Order Details"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cde4be80-8535-48d5-aee5-57f6d669a9f5"
+                  name="Stock Control"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="916c0793-ce0e-4465-81e2-46ebcba4d21a"
+            isDerived="false"
+            sourceEndRoleName="Recieve Order Details"
+            targetEndRoleName="Distribution"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="3740a0c1-9d18-462e-9731-621d623b1908"
+              LastKnownName="Distribution"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f1a8b33d-eb79-433a-8901-5f9b5303dfce"
+                  name="Recieve Order Details"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7ac147e3-3f8d-4baa-a5a6-340e8d27d9c2"
+                  name="Distribution"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <additions>
+          <include
+            Id="d82a6366-fe7f-462d-9039-bd651177b12a">
+            <useCaseMoniker
+              Id="865600c9-7e37-441b-8da7-adb72db21497"
+              LastKnownName="Accept Terms and Conditions"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+          </include>
+          <include
+            Id="6a0ad0b2-5867-4420-87c9-99d17f6d82c6">
+            <useCaseMoniker
+              Id="e11f744c-1766-4786-ae55-ef30077cc98e"
+              LastKnownName="Create Invoice"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="865600c9-7e37-441b-8da7-adb72db21497"
+        name="Accept Terms and Conditions"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="36a26e9b-b5c6-4559-95ff-369348c6b14b">
+            <useCaseMoniker
+              Id="478caeca-0774-4ada-9059-df3c4a3a9ea0"
+              LastKnownName="Ensure Stock is Available"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="6de29924-1e3b-4e7e-835d-dda1d9ceddc0"
+        name="System"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="d87cb8ae-f5d3-4e2e-9856-818e878ad478"
+            isDerived="false"
+            sourceEndRoleName="System"
+            targetEndRoleName="Send Acknowledgement Email"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b7121d7e-fa6a-45a8-ab3b-ed5b3165b91f"
+              LastKnownName="Send Acknowledgement Email"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2ce3d0b8-da74-4117-ba57-1735ebe15b14"
+                  name="System"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="05ce3a00-b04b-4b12-a820-93a226340729"
+                  name="Send Acknowledgement Email"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ba226318-119c-483b-ae68-67a33edb2987"
+            isDerived="false"
+            sourceEndRoleName="System"
+            targetEndRoleName="Send T&amp;C's PDF Email"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b33e0afb-8ca2-487f-adf0-b61586eb2c4a"
+              LastKnownName="Send T&amp;C's PDF Email"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e443edc0-d785-4e33-8260-4ced0b0a3aa0"
+                  name="System"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5dd67454-90f5-4b1a-86da-70c613a98613"
+                  name="Send T&amp;C's PDF Email"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="9fdefd33-c95c-4b0d-ba31-e2710217cbed"
+            isDerived="false"
+            sourceEndRoleName="System"
+            targetEndRoleName="Add Extra Charges"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a95abc6e-18c0-4dcd-ac1d-9d4e75d2962c"
+              LastKnownName="Add Extra Charges"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="87311e61-4aab-44cd-b6e1-72cdab08693a"
+                  name="System"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e04a239d-594e-416a-80ba-6680b606d406"
+                  name="Add Extra Charges"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e11f744c-1766-4786-ae55-ef30077cc98e"
+        name="Create Invoice"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="58799bab-3031-4da1-91f4-806ac499fc98"
+            isDerived="false"
+            sourceEndRoleName="Create Invoice"
+            targetEndRoleName="Accounting"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="232f22dd-7742-40a7-9f34-910c74d8e7b5"
+              LastKnownName="Accounting"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8158bd8d-f318-419f-a7bb-b9a628ddfed5"
+                  name="Create Invoice"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="86f54827-ddab-493b-a631-16de760f190f"
+                  name="Accounting"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b7121d7e-fa6a-45a8-ab3b-ed5b3165b91f"
+        name="Send Acknowledgement Email"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="ea5f2516-2824-4101-a3a1-1e06cf3801f8"
+            isDerived="false"
+            sourceEndRoleName="Send Acknowledgement Email"
+            targetEndRoleName="Customer"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="1adab966-4bca-48b1-bcd9-8852d227fdfa"
+              LastKnownName="Customer"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="68abf910-6140-4131-bc0c-d4d9fb70c3ad"
+                  name="Send Acknowledgement Email"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="644d061b-7e25-4ace-b144-13fbe50835c4"
+                  name="Customer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <additions>
+          <include
+            Id="26a8ae47-6622-463f-8ac6-5da513836dca">
+            <useCaseMoniker
+              Id="b33e0afb-8ca2-487f-adf0-b61586eb2c4a"
+              LastKnownName="Send T&amp;C's PDF Email"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="478caeca-0774-4ada-9059-df3c4a3a9ea0"
+        name="Ensure Stock is Available"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="2d5578dd-7c3f-4edb-a408-d63374ef2a95">
+            <useCaseMoniker
+              Id="b7121d7e-fa6a-45a8-ab3b-ed5b3165b91f"
+              LastKnownName="Send Acknowledgement Email"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="678128d3-fb14-40dd-85ef-3fbd71557241"
+        name="Inform about Limited Stock"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="f0a19b05-2943-469d-8296-58fb44f7ff9e"
+            isDerived="false"
+            sourceEndRoleName="Inform about Limited Stock"
+            targetEndRoleName="Customer"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="1adab966-4bca-48b1-bcd9-8852d227fdfa"
+              LastKnownName="Customer"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a43e64db-b7c1-40e7-bf34-5c9ccd0f62a0"
+                  name="Inform about Limited Stock"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0ddc0ed6-6ddc-4596-babd-694ed7098ef0"
+                  name="Customer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <extendedCases>
+          <extend
+            Id="63937c3d-cd04-41a0-800c-ec8eaf3f7b5a">
+            <useCaseMoniker
+              Id="478caeca-0774-4ada-9059-df3c4a3a9ea0"
+              LastKnownName="Ensure Stock is Available"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b33e0afb-8ca2-487f-adf0-b61586eb2c4a"
+        name="Send T&amp;C's PDF Email"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="226812c0-567b-417d-9815-dafe24272bdc"
+            isDerived="false"
+            sourceEndRoleName="Send T&amp;C's PDF Email"
+            targetEndRoleName="Customer"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="1adab966-4bca-48b1-bcd9-8852d227fdfa"
+              LastKnownName="Customer"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="740a3cc4-01fd-48ea-a9ff-30795bf73fe5"
+                  name="Send T&amp;C's PDF Email"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="813df653-928e-400c-9b5c-e22f1e30da68"
+                  name="Customer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <additions>
+          <include
+            Id="49d6fc8a-568d-4fa2-b665-4b195aae2002">
+            <useCaseMoniker
+              Id="5cfa7293-d405-4c4f-b5ac-238b7f1368c1"
+              LastKnownName="Create Invoice"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5cfa7293-d405-4c4f-b5ac-238b7f1368c1"
+        name="Create Invoice"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="3ff18c05-418a-4ea8-885f-e0805cf33f27">
+            <useCaseMoniker
+              Id="a95abc6e-18c0-4dcd-ac1d-9d4e75d2962c"
+              LastKnownName="Add Extra Charges"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include
+            Id="9a8b751c-e4b1-4c76-ae27-b97e5bef4662">
+            <useCaseMoniker
+              Id="fd6a44e0-da80-412e-bc86-1094f0c44624"
+              LastKnownName="Display Invoice"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a95abc6e-18c0-4dcd-ac1d-9d4e75d2962c"
+        name="Add Extra Charges"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="fd6a44e0-da80-412e-bc86-1094f0c44624"
+        name="Display Invoice"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="65f22d46-0dcd-4b9f-a091-87d814c87157"
+            isDerived="false"
+            sourceEndRoleName="Display Invoice"
+            targetEndRoleName="Customer"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="1adab966-4bca-48b1-bcd9-8852d227fdfa"
+              LastKnownName="Customer"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="864c1dae-700f-44aa-ab5a-d68f6077cbd5"
+                  name="Display Invoice"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="60522e66-d30c-4d0d-8abe-8319dd68758d"
+                  name="Customer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <additions>
+          <include
+            Id="a1b2e778-f172-4857-ba0a-06c64ac4b504">
+            <useCaseMoniker
+              Id="4853fe77-82e4-4da1-abd4-78be22d2c54e"
+              LastKnownName="Accept Payment"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4853fe77-82e4-4da1-abd4-78be22d2c54e"
+        name="Accept Payment"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="e3f31f21-050d-4d60-ac39-afedf8cf71d5"
+            isDerived="false"
+            sourceEndRoleName="Accept Payment"
+            targetEndRoleName="Customer"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="1adab966-4bca-48b1-bcd9-8852d227fdfa"
+              LastKnownName="Customer"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="11fdd39c-0443-445a-ac7f-aed0c699bac7"
+                  name="Accept Payment"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="76a8d1cc-688e-4415-b44c-b272b9a63cfb"
+                  name="Customer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="70311b7b-e184-4df3-a13b-334749312fd0"
+        name="Recieve Goods"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="c75a4be1-4c69-4b9d-8312-a71960a53095"
+            isDerived="false"
+            sourceEndRoleName="Goods Recieved"
+            targetEndRoleName="Recieving Dpt."
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="6a850a7e-c9a7-441a-82a4-cacd54f1b7af"
+              LastKnownName="Recieving Dpt."
+              LastKnownLocation="CourseworkDiagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="58ba439c-1005-47c7-9616-3809667ad46e"
+                  name="Goods Recieved"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="59176bac-f177-4265-808a-730ecb2861b0"
+                  name="Recieving Dpt."
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <additions>
+          <include
+            Id="8b56583d-70f7-45c1-9752-31ced3ec6110">
+            <useCaseMoniker
+              Id="6cef2968-3746-4215-9aeb-b232736f7829"
+              LastKnownName="Verify Against Order"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f19141d1-5b41-4e95-b1d8-49cd115d5071"
+        name="Cancel Order"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="c48e7ac4-a33e-4aff-b1a3-6e30362d0dae">
+            <useCaseMoniker
+              Id="4853fe77-82e4-4da1-abd4-78be22d2c54e"
+              LastKnownName="Accept Payment"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6cef2968-3746-4215-9aeb-b232736f7829"
+        name="Verify Against Order"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="ded32e7b-63b9-4a5c-be9d-5b3c4baea15b">
+            <useCaseMoniker
+              Id="e521a76e-4e1d-4921-86e1-d07811aef228"
+              LastKnownName="Prepare Recieving Report"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="6a850a7e-c9a7-441a-82a4-cacd54f1b7af"
+        name="Recieving Dpt."
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="eb9d8a17-9326-45be-8fb4-546deee9d922"
+            isDerived="false"
+            sourceEndRoleName="Recieving Dpt."
+            targetEndRoleName="Verify Against Order"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6cef2968-3746-4215-9aeb-b232736f7829"
+              LastKnownName="Verify Against Order"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1a7378fe-c902-44ae-aabf-1537cf288921"
+                  name="Recieving Dpt."
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="460d7ccc-8c24-4035-ab08-d81affbe3aa9"
+                  name="Verify Against Order"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f44a58c6-eabb-4bbc-bd18-0a2e730bfa72"
+            isDerived="false"
+            sourceEndRoleName="Recieving Dpt."
+            targetEndRoleName="Prepare Recieving Report"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="e521a76e-4e1d-4921-86e1-d07811aef228"
+              LastKnownName="Prepare Recieving Report"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dddf749e-0946-43db-8e04-0a796cce486c"
+                  name="Recieving Dpt."
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fe6b7c37-9c6a-4204-840b-b508602d3b7a"
+                  name="Prepare Recieving Report"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ef18795f-1f50-4fd0-b559-6849ce10260c"
+            isDerived="false"
+            sourceEndRoleName="Recieving Dpt."
+            targetEndRoleName="Note Discrepencies"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="db723263-bcad-4c2e-9b50-791b515d30a9"
+              LastKnownName="Note Discrepencies"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="55783c9c-d8b7-4238-aa5f-276d449f8f36"
+                  name="Recieving Dpt."
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fabaf353-2b35-40ad-9d04-efe9b3b61638"
+                  name="Note Discrepencies"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="fa3f5931-572b-403f-baf7-babaa5840fd5"
+            isDerived="false"
+            sourceEndRoleName="Recieving Dpt."
+            targetEndRoleName="Deliver Goods"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="38fc4f1d-ddb6-4493-abc3-761e392fbd62"
+              LastKnownName="Deliver Goods"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1df136a2-8ef7-40bd-acd4-006d4a26cf0c"
+                  name="Recieving Dpt."
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4b1122ee-0f27-4734-bb1c-09948d1e781b"
+                  name="Deliver Goods"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e521a76e-4e1d-4921-86e1-d07811aef228"
+        name="Prepare Recieving Report"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="db723263-bcad-4c2e-9b50-791b515d30a9"
+        name="Note Discrepencies"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="dda558ce-07ef-4dac-8de8-ad63f9b153b2">
+            <useCaseMoniker
+              Id="e521a76e-4e1d-4921-86e1-d07811aef228"
+              LastKnownName="Prepare Recieving Report"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include
+            Id="05018d22-6eb7-43e5-9c37-267d4f43aaf8">
+            <useCaseMoniker
+              Id="38fc4f1d-ddb6-4493-abc3-761e392fbd62"
+              LastKnownName="Deliver Goods"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="38fc4f1d-ddb6-4493-abc3-761e392fbd62"
+        name="Deliver Goods"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="0c8b3576-ee67-4b78-8682-5c9a613f1486"
+            isDerived="false"
+            sourceEndRoleName="Deliver Goods"
+            targetEndRoleName="Stock Control"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="87e6a54a-14c0-4a43-b258-e6299dad7902"
+              LastKnownName="Stock Control"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9b3df729-14ec-4eb1-8e85-23a76d53b057"
+                  name="Deliver Goods"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1b17e46b-aed0-41c5-b969-3c752e8b8d89"
+                  name="Stock Control"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d6ba7f99-692f-4e84-b10d-5fa58d9f0379"
+        name="Order"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="774c599d-7f14-47d9-a7b4-d2320ed01ced"
+            isDerived="false"
+            sourceEndRoleName="Order"
+            targetEndRoleName="Items"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="5aa46f95-377e-4724-be2c-113b0ae61915"
+              LastKnownName="Items"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9614aa29-b38a-4c6c-92e0-a2c8b2ec36f9"
+                  name="Order"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="41f29831-b6d0-4101-a97e-ea570c593c82"
+                      name="Lower"
+                      value="1:1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="a7848aa1-e97f-490f-ad5a-113140565a63"
+                      name="Upper"
+                      value="1:1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="57a516b5-938d-408d-a069-8bc8d421f605"
+                  name="Items"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="a7e7782f-23d5-45be-9e80-e49057e97a9d"
+                      name="Lower"
+                      value="1:*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="549e5048-b655-4027-b881-c21b49edc688"
+                      name="Upper"
+                      value="1:*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b09d83cd-ef0a-45b4-850f-660585da3fa3"
+            isDerived="false"
+            sourceEndRoleName="Order"
+            targetEndRoleName="Departments"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="cc3ba464-1d52-4bc7-99d4-c65be0e6ea0a"
+              LastKnownName="Departments"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dc1f601c-54df-4123-9008-f3c77da3142e"
+                  name="Order"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="7c2acfed-e76c-4712-be6c-0b69204af850"
+                      name="Lower"
+                      value="1:*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f55f23ae-c2fc-4036-a71a-16b4702c136e"
+                      name="Upper"
+                      value="1:*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8a5c61ce-16c8-4bc3-8d8d-838f58227e31"
+                  name="Departments"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="95e2928e-5444-47b4-8f3e-aa5ece68459e"
+                      name="Lower"
+                      value="1:1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="05de1454-e253-482d-b87d-f67166060b77"
+                      name="Upper"
+                      value="1:1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="9bc1e912-fc55-4102-9546-0e9af4da1a00"
+            name="orderID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="CourseworkDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="7f48f706-d460-4444-875e-91cd97b10837"
+            name="orderDetails"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="059cdfb3-09b9-4513-bcd9-1ca6a994e3ee"
+                LastKnownName="String[]"
+                LastKnownLocation="CourseworkDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="417e393d-e251-4ebb-a83a-527482aa7050"
+            name="sendDetails"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="02075997-6367-4ed8-ab3e-16942f7acae2"
+            name="getDetails"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d7fec716-cdd3-4b07-9d70-7a5ffbd6899b"
+        name="Goods"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="23704fb1-8370-4a64-8b63-f6dd54711e62"
+            name="goodName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="CourseworkDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b392398c-c6c0-4431-9580-69c5c138d3c7"
+            name="numGoods : Integer"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0a6a9577-d255-4991-8779-511149f4f9c0"
+        name="Extras"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="e1ad8ee4-edb6-44f0-940d-651bded90eb9"
+            name="selectedExtras"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="90761e42-7644-470a-9da4-6ac6b4b134a6"
+        name="Invoice"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="21962a90-c911-4221-81ac-9d006c8a8d6d"
+            name="invoiceID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="CourseworkDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="acfc7eb7-0a6e-4a2d-b099-1639dad8aed2"
+            name="invoiceDetails"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="059cdfb3-09b9-4513-bcd9-1ca6a994e3ee"
+                LastKnownName="String[]"
+                LastKnownLocation="CourseworkDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ba75a33d-d013-463c-8697-9d051f0277c5"
+            name="grossPrice"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="07763fc9-4f8a-4230-a9ea-da1f6a0a8d84"
+                LastKnownName="Float"
+                LastKnownLocation="CourseworkDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="2838e13c-0a82-4dc9-b6ef-7f1ef9198153"
+            name="texPercentage"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="07763fc9-4f8a-4230-a9ea-da1f6a0a8d84"
+                LastKnownName="Float"
+                LastKnownLocation="CourseworkDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="b5d950c2-83ed-4e1e-a458-3017775709c7"
+            name="calculateGross"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a83f5d04-8a10-4ab9-b2f7-79723f55e969"
+            name="calculateBeforeVAT"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="f3a3114b-8c79-4262-a41c-cfcc88d84898"
+            name="calculateAfterVAT"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b70c0294-a61c-4883-94fc-b5b52448ca70"
+        name="Payment"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="39cf707d-1b8e-468a-a066-f7d21e91e8fe"
+        name="Accounting"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="119a819c-a57e-41fb-a131-92bb5f79b70b"
+            isSubstitutable="false">
+            <classMoniker
+              Id="cc3ba464-1d52-4bc7-99d4-c65be0e6ea0a"
+              LastKnownName="Departments"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="e6efcbd8-7c1c-47ce-a310-4fdf211c3487"
+            isDerived="false"
+            sourceEndRoleName="Accounting"
+            targetEndRoleName="Invoice"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="90761e42-7644-470a-9da4-6ac6b4b134a6"
+              LastKnownName="Invoice"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8b24473e-ae4a-4ee8-88e7-c32f15f6e912"
+                  name="Accounting"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="6c926e19-6274-4b27-acb9-9d3efc5f0719"
+                      name="Lower"
+                      value="1:1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f73ca8cb-fb59-4541-a978-227c05ea1f61"
+                      name="Upper"
+                      value="1:1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a3dd493c-2b5b-4e16-9b12-20e4f4037521"
+                  name="Invoice"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="4f87c50a-932f-49a9-99f9-390ed8363980"
+                      name="Lower"
+                      value="1:*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="eaf8231a-0e22-41f2-bc07-3b507ea3a5c1"
+                      name="Upper"
+                      value="1:*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="c5d9793a-1963-40b2-94bc-97108b8d3ae7"
+            name="orderDetails"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="059cdfb3-09b9-4513-bcd9-1ca6a994e3ee"
+                LastKnownName="String[]"
+                LastKnownLocation="CourseworkDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="4a97a610-62d0-4f91-a249-e43170292660"
+            name="createInvoice"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9e83f8b7-dba1-4d19-9f41-cbb022acdf78"
+            name="calculateVAT"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="47b0bd33-0570-4bc7-802e-78ad90a0deb3"
+        name="Distribution"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="c1561aa2-2048-4612-868d-271ec91d2656"
+            isSubstitutable="false">
+            <classMoniker
+              Id="cc3ba464-1d52-4bc7-99d4-c65be0e6ea0a"
+              LastKnownName="Departments"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="374cb7c1-88ee-47f9-a5ca-f3289a8ef568"
+            name="orderDetails"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="059cdfb3-09b9-4513-bcd9-1ca6a994e3ee"
+                LastKnownName="String[]"
+                LastKnownLocation="CourseworkDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="b2a51283-b827-4353-938c-38b66fc8cfba"
+            name="maintainDeliverySchedule"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2fca5483-e171-4437-9ff4-b938a5f7d74d"
+        name="Stock Control"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="3ece981d-d9f7-4f9f-82ca-139b0334d08a"
+            isSubstitutable="false">
+            <classMoniker
+              Id="cc3ba464-1d52-4bc7-99d4-c65be0e6ea0a"
+              LastKnownName="Departments"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="7ecf75be-5a5a-4a6f-8378-e502147cdb11"
+            name="stockID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="CourseworkDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ecb079c7-0c6d-49a2-8d2c-8bc807b39edb"
+            name="reorderPoint"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="CourseworkDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="4340b779-1c3b-4348-92ca-dd7e4ccb6da7"
+            name="orderDetails"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="059cdfb3-09b9-4513-bcd9-1ca6a994e3ee"
+                LastKnownName="String[]"
+                LastKnownLocation="CourseworkDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="18dac291-aa25-4783-b43b-c11fa24af6d7"
+            name="replaceStock"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="315ffc08-7b2f-4307-8e57-019210ef8ee6"
+            name="checkMinStockLevel"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b79e66b3-6fea-4702-8421-7db8fd6720a2"
+            name="checkAvailableStock"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="cc3ba464-1d52-4bc7-99d4-c65be0e6ea0a"
+        name="Departments"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="62bd4e92-3f29-4f58-97ab-dfebd9eb5e0e"
+            name="departmentID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="CourseworkDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="309dd15e-af5f-4465-b2f7-70e9fed81b74"
+            name="storeDetails"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="82b0a7bd-6ecb-4c7e-862e-0a7010d89e41"
+        name="Suppliers"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="770fb0fc-5af2-46ea-b512-afe6e22b6c47"
+            name="companyID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="CourseworkDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="01edd2b0-dd0b-48aa-b99c-5c396099a8bd"
+        name="Recieving"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="abf3c033-778e-447b-837c-2510e92ddbd3"
+            name="verifyGoods"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="fa1ccb3c-e834-40d7-a211-8fa6748cf120"
+        name="Bill of Lading"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="629a90de-c22a-4c2e-88a3-dae817ed58b4"
+            name="billID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="CourseworkDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7584cdc4-bab2-4c8c-a01e-f60b1b4d3c32"
+        name="Stock Records"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="14924f3d-ca41-413e-b093-464778f0ebe6"
+        name="Warehouse"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="cb526c1e-70a7-4700-9b8d-b251c3b4a32d"
+        name="Delivery Schedule"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="36afe334-bb52-48dc-a19c-a5ea9d78175e"
+            name="scheduleID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="CourseworkDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1234f196-a10a-4ecf-a5b3-ea9b3af9ddde"
+        name="Terms and Conditions"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5aa46f95-377e-4724-be2c-113b0ae61915"
+        name="Items"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="dfc3cce8-1870-4d78-a309-c0377df3a869"
+            name="itemID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="CourseworkDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="3cedb17e-eea7-4b99-8ae3-849af395ec34"
+            name="itemName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="CourseworkDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1baa88fd-4f31-426b-9193-4f7332d345da"
+            name="itemNum"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="CourseworkDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7a32ff2b-cc3c-4ffa-bbe2-d6ab6ae11199"
+        name="Recieving Report"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="059cdfb3-09b9-4513-bcd9-1ca6a994e3ee"
+        name="String[]" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="07763fc9-4f8a-4230-a9ea-da1f6a0a8d84"
+        name="Float" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="662267e6-5e7c-4527-977d-a796e5540906"
+        name="Email"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="931c29b3-63a2-40b9-8e15-8b9e9a53657d"
+            name="termAndConditions"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="CourseworkDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="a2ba0701-189b-41b5-a935-a51b885d90cc"
+        name="Bool" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="12522aed-03aa-487f-9cb9-40fef71d67b6"
+        name="Email"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="f633740b-3b80-4869-a59a-a67b880855d9"
+            isDerived="false"
+            sourceEndRoleName="Email"
+            targetEndRoleName="Customer"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="f4a07bd9-7ebf-4fdb-8a6f-e17b000d24fc"
+              LastKnownName="Customer"
+              LastKnownLocation="CourseworkDiagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8c6df84e-4aa3-4197-bd0c-3075e56ef93a"
+                  name="Email"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="d3ea6001-af67-4a2b-8fc0-2a36977835ae"
+                      name="Lower"
+                      value="1:*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="5a9b9d8b-d9ad-4b9d-83f1-a58d80f4abde"
+                      name="Upper"
+                      value="1:*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="91e3a28b-0edb-488a-91c7-0ef2c7cc3c20"
+                  name="Customer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="c9b2ba86-1bb2-4bda-82a8-7823c00361da"
+                      name="Lower"
+                      value="1:*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="87fe16b4-4e2f-4c62-9a62-59cf7f853e51"
+                      name="Upper"
+                      value="1:*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="79b138f0-0162-4a5e-982b-9cf659278172"
+            name="companyEmail"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="CourseworkDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="35313f46-e41b-4ef9-bc1e-dce170e8d6bb"
+            name="content"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="CourseworkDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="da742527-f769-482a-a6e2-f796b2932800"
+            name="recipients"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="CourseworkDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="4872f1cd-25a1-41e8-acdc-2c39b478323f"
+            name="sendEmail"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="30c38c17-7447-4a58-8ab7-b25782301873"
+            name="sendTermsAndCondotions"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="16209ce1-7d97-4abe-981a-48c3e0dcee5b"
+            name="checkRecieptDate"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="38480c3f-a70a-49fb-a230-e4392f3a2a57"
+            name="checkAcknowledgement"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fccb01b1-70b4-4d35-af52-4100507d5baa"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="CourseworkDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
